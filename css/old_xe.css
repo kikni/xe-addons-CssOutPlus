@@ -1,0 +1,91 @@
+/* NHN (developers@xpressengine.com) */
+
+/* Anchor Button */
+a.btn,
+a.btn span { position:relative; display:inline-block; text-decoration:none !important; background:url(../btnImages/buttonWhite.gif) no-repeat; cursor:pointer; white-space:nowrap; vertical-align:middle;}
+a.btn { padding:0; background-position:left top; overflow:visible;}
+a.btn span { left:2px; padding:6px 10px 5px 8px; color:#000; font:12px/12px Sans-serif; background-position:right top; *vertical-align:top;}
+/* Large Size */
+a.btn.large { background-position:left -30px; }
+a.btn.large span { padding:7px 10px 6px 8px; font:16px/16px Sans-serif; background-position:right -30px;}
+/* xLarge Size */
+a.btn.xLarge { background-position:left -65px; }
+a.btn.xLarge span { padding:8px 10px 7px 8px; font:20px/20px Sans-serif; background-position:right -65px;}
+/* Small Size */
+a.btn.small { background-position:left -107px; }
+a.btn.small span { padding:4px 6px 3px 4px; font:11px/11px Sans-serif; background-position:right -107px;}
+
+/* Control Button + Submit Button */
+span.btn,
+span.btn button,
+span.btn input { position:relative; margin:0; display:inline-block; border:0; font:12px Sans-serif; white-space:nowrap; background:url(../btnImages/buttonWhite.gif) no-repeat; vertical-align:middle;}
+span.btn { padding:0; background-position:left top;}
+span.btn button,
+span.btn input { height:23px; left:2px; *vertical-align:top; padding:0 10px 0 8px; line-height:24px; background-position:right top; cursor:pointer; *overflow:visible;}
+/* Large Size */
+span.btn.large { background-position:left -30px;}
+span.btn.large button,
+span.btn.large input { height:30px; padding:0 10px 0 8px; font:16px/30px Sans-serif; background-position:right -30px;}
+/* xLarge Size */
+span.btn.xLarge { background-position:left -65px;}
+span.btn.xLarge button,
+span.btn.xLarge input { height:35px; padding:0 10px 0 8px; font:20px/36px Sans-serif; background-position:right -65px;}
+/* Small Size */
+span.btn.small { background-position:left -107px;}
+span.btn.small button,
+span.btn.small input { height:18px; padding:0 6px 0 4px; font:11px/18px Sans-serif; background-position:right -107px;}
+
+/* Strong Button */
+a.btn.strong *,
+span.btn.strong * { font-weight:bold !important;}
+
+/* Icon Add */
+a.btn .icon { position:relative; border:0; vertical-align:middle;}
+span.btn .icon { position:relative; left:10px; margin-right:8px; vertical-align:middle;}
+
+/* Color Preset */
+a.btn.green,
+a.btn.green span,
+span.btn.green,
+span.btn.green button,
+span.btn.green input { background-image:url(../btnImages/buttonGreen.gif); color:#fff;}
+a.btn.black,
+a.btn.black span,
+span.btn.black,
+span.btn.black button,
+span.btn.black input { background-image:url(../btnImages/buttonBlack.gif); color:#fff;}
+a.btn.red,
+a.btn.red span,
+span.btn.red,
+span.btn.red button,
+span.btn.red input { background-image:url(../btnImages/buttonRed.gif); color:#fff;}
+a.btn.blue,
+a.btn.blue span,
+span.btn.blue,
+span.btn.blue button,
+span.btn.blue input { background-image:url(../btnImages/buttonBlue.gif); color:#fff;}
+
+/* Offset Debug */
+a.btn,
+span.btn{ margin-right:2px;}
+
+/* Button Set */
+.buttonSet{ width:16px; height:16px; background-image:url(../btnImages/buttonSet.gif); background-repeat:no-repeat; border:0; background-color:transparent; vertical-align:middle; display:inline-block; text-decoration:none;}
+.buttonSet span{ z-index:-1; font-size:0; line-height:0; visibility:hidden;}
+.buttonSet.btnUp{ background-position:0 0;}
+.buttonSet.btnDown{ background-position:0 -16px;}
+.buttonSet.btnLeft{ background-position:0 -32px;}
+.buttonSet.btnRight{ background-position:0 -48px;}
+.buttonSet.btnInfo{ background-position:0 -64px;}
+.buttonSet.btnCopy{ background-position:0 -80px;}
+.buttonSet.btnSetting{ background-position:0 -96px;}
+.buttonSet.btnActive{ background-position:0 -112px;}
+.buttonSet.btnDisable{ background-position:0 -128px;}
+.buttonSet.btnDelete{ background-position:0 -144px;}
+.buttonSet.btnHomepage{ background-position:0 -160px;}
+.buttonSet.btnBlog{ background-position:0 -176px;}
+.buttonSet.btnCalendar{ background-position:0 -192px;}
+.buttonSet.btnLayoutEditor{ background-position:0 -208px;}
+.buttonSet.btnAddWidget{ background-position:0 -224px;}
+.buttonSet.btnAddContent{ background-position:0 -240px;}
+

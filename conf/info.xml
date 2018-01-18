@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<addon version="0.2">
+	<title xml:lang="ko">CSS아웃플러스 애드온</title>
+	<description xml:lang="ko">CSS추가/삭제또는스킨적용을 도와주는 애드온입니다.</description>
+	<version>1.2</version>
+    <date>2012-07-16</date>
+    <author email_address="developer@kikni.com" link="http://project.kikni.com/">
+        <name xml:lang="ko">키큰아이</name>
+    </author>
+	<extra_vars>
+	<group>
+	<title xml:lang="ko">XE CSS 설정</title>
+		<var name="css_min" type="select">
+			<title xml:lang="ko">XE MIN CSS 로드 옵션</title>
+			<description xml:lang="ko">(활성화) 기존 CSS를 로드합니다.
+			(비활성화) 기존 CSS를 언로드합니다.
+			* ./common/css/xe.min.css 파일을 활성/비활성화드 시킬수 있습니다.
+			* XE폴더내 ./common 폴더와 ./common/css 폴더를 707 퍼미션으로 변경 해 주셔야합니다.
+			</description>
+			<options value="N">
+                <title xml:lang="ko">활성화(기본값)</title>
+            </options>
+			<options value="Y">
+                <title xml:lang="ko">비활성화</title>
+            </options>
+		</var>
+		
+		<var name="css_btn" type="select">
+			<title xml:lang="ko">XE MIN CSS .btn 제외 로드 옵션</title>
+			<description xml:lang="ko">XE MIN CSS 로드 비활성화 후 사용 해주세요! - CSS 중복 에러 주의!
+			기본 XE MIN CSS에서 .btn 만 제외한 나머지 CSS를 로드하는 설정입니다.
+			</description>
+			<options value="N">
+                <title xml:lang="ko">비활성화(기본값)</title>
+            </options>
+			<options value="Y">
+                <title xml:lang="ko">활성화</title>
+            </options>
+		</var>
+	</group>
+	
+	<group>
+	<title xml:lang="ko">CSS .btn 스킨 로드 설정</title>
+		<var name="css_btn_load" type="select">
+			<title xml:lang="ko">XE MIN CSS 구버전 .btn 로드 옵션</title>
+			<description xml:lang="ko">XE MIN CSS 로드 비활성화 후 사용 해주세요! - CSS 중복 에러 주의!
+			XE Core .btn CSS 스킨 로드 설정입니다. (비활성화/구버전XE/부트스트랩(준비중))중 선택 가능합니다.
+			</description>
+			<options value="N">
+                <title xml:lang="ko">비활성화(기본값)</title>
+            </options>
+			<options value="old_xe">
+                <title xml:lang="ko">구버전 XE .btn 스킨</title>
+            </options>
+			<options value="bootstrap">
+                <title xml:lang="ko">부트 스트랩 .btn 스킨</title>
+            </options>
+		</var>
+	</group>
+	
+	<group>
+	<title xml:lang="ko">CSS 로드 설정</title>
+		<var name="css_get_plus1" type="text">
+			<title xml:lang="ko">로드하실 CSS 경로 (1)</title>
+			<description xml:lang="ko">추가하실 CSS에 주소를 입력해주세요. Ex (./layouts/레이아웃폴더/css/style.css)</description>
+		</var>
+		<var name="css_option_plus1" type="select">
+			<title xml:lang="ko">로드하실 CSS 경로 (1) 작동 설정</title>
+			<description xml:lang="ko">이 설정을 실행하실려면 사용으로 변경 해 주세요.</description>
+			<options value="N">
+                <title xml:lang="ko">비활성화(기본값)</title>
+            </options>
+			<options value="Y">
+                <title xml:lang="ko">활성화(기본값)</title>
+            </options>
+		</var>
+		
+		<var name="css_get_plus2" type="text">
+			<title xml:lang="ko">로드하실 CSS 경로 (2)</title>
+			<description xml:lang="ko">추가하실 CSS에 주소를 입력해주세요. Ex (./layouts/레이아웃폴더/css/style.css)</description>
+		</var>
+		<var name="css_option_plus2" type="select">
+			<title xml:lang="ko">로드하실 CSS 경로 (2) 작동 설정</title>
+			<description xml:lang="ko">이 설정을 실행하실려면 사용으로 변경 해 주세요.</description>
+			<options value="N">
+                <title xml:lang="ko">비활성화(기본값)</title>
+            </options>
+			<options value="Y">
+                <title xml:lang="ko">활성화(기본값)</title>
+            </options>
+		</var>
+	</group>
+	
+	<group>
+	<title xml:lang="ko">CSS 언로드 설정</title>
+		<var name="css_get_out1" type="text">
+			<title xml:lang="ko">언로드하실 CSS 경로 (1)</title>
+			<description xml:lang="ko">언로드하실 CSS에 주소를 입력해주세요. Ex (./layouts/레이아웃폴더/css/style.css)</description>
+		</var>
+		<var name="css_option_out1" type="select">
+			<title xml:lang="ko">언로드하실 CSS 경로 (1) 작동 설정</title>
+			<description xml:lang="ko">이 설정을 실행하실려면 사용으로 변경 해 주세요.</description>
+			<options value="N">
+                <title xml:lang="ko">비활성화(기본값)</title>
+            </options>
+			<options value="Y">
+                <title xml:lang="ko">활성화(기본값)</title>
+            </options>
+		</var>
+
+		<var name="css_get_out2" type="text">
+			<title xml:lang="ko">언로드하실 CSS 경로 (2)</title>
+			<description xml:lang="ko">언로드하실 CSS에 주소를 입력해주세요. Ex (./layouts/레이아웃폴더/css/style.css)</description>
+		</var>
+		<var name="css_option_out2" type="select">
+			<title xml:lang="ko">언로드하실 CSS 경로 (2) 작동 설정</title>
+			<description xml:lang="ko">이 설정을 실행하실려면 사용으로 변경 해 주세요.</description>
+			<options value="N">
+                <title xml:lang="ko">비활성화(기본값)</title>
+            </options>
+			<options value="Y">
+                <title xml:lang="ko">활성화(기본값)</title>
+            </options>
+		</var>
+	</group>
+	</extra_vars>
+</addon>
